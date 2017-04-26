@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Emmi GNU/Linux</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Documentação</h1>
+					<a href="instalacaoemmi.html">Instalação Emmi</a><br>
+					<a href="primeirospassos.html">Os primeiros passos</a><br>
+					<a href="instalacaodeprogramas.html">Instalação de programas</a><br>
+					<a href="instalacaopacotesdebian.html">Instalação de pacotes .deb</a><br>
+					<a href="trocarsenhadoroot.html">Trocar senha do root</a><br>
+					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
+					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>
+				</header>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Primeiros passos</h2>
+									</header>
+
+<h4>Alteração dos espelhos na Emmi</h4>	
+
+<p>A Emmi já vem com os espelhos totalmente configurados e pronto para rodar, porém fica seu critério adicionar ou anular alguns espelhos.<br>
+Vamos ao passo a passo, primeiramente abra o terminal, logue como root e digite:<br><br>
+<b># nano /etc/apt/sources.list</b><br><br>
+<img src="images/mirror.png"><br>
+Para deixar um link nulo adicione <b>#</b> na frente do link.<br>
+Saia do editor pressione <b>CTRL+X</b><br><br>
+
+<h4>Atualizando o Sistema</h4>
+
+Após feito isso vamos atualizar o sistema, para garantir toda segurança e pacotes atualizados.<br>
+Vamos rodar os seguintes comandos:<br><br>
+<b># apt-get update</b><br>
+<b># apt-get upgrade</b><br><br>
+Este procedimento pode demorar dependendo da velocidade da sua internet.<br><br>
+<img src="images/atualizacao.png"><br><br>
+
+<h4>Ajustando o Horário</h4>
+
+Para ajustar o horário podemos fazer isto via gráfico, porém é mais rápido fazer isto via terminal.<br>
+Vamos abrir o terminal entrar como root e rodamos o seguinte comando:<br><br>
+<b># dpkg-reconfigure tzdata</b><br><br>
+Uma janela se abrirá com alguns continentes como (Africa, America, Antarctica) e assim por diante, selecionamos <b>America</b> e precionamos <b>enter</b></b><br><br>
+<img src="images/horarioamerica.png"><br><br>
+Use o direcional até achar a localidade, em nosso caso vamos utilizar <b>São Paulo</b><br><br>.
+<img src="images/horariosaopaulo.png"><br><br>
+Se tudo ocorreu bem a seguinte mensagem será exibida no terminal:<br><br>
+<img src="images/horariosaopauloconcluido.png"><br><br><br></p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

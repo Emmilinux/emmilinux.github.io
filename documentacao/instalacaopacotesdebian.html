@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Emmi GNU/Linux</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Documentação</h1>
+					<a href="instalacaoemmi.html">Instalação Emmi</a><br>
+					<a href="primeirospassos.html">Os primeiros passos</a><br>
+					<a href="instalacaodeprogramas.html">Instalação de programas</a><br>
+					<a href="instalacaopacotesdebian.html">Instalação de pacotes .deb</a><br>
+					<a href="trocarsenhadoroot.html">Trocar senha do root</a><br>
+					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
+					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>
+				</header>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Instalação de Pacotes .deb</h2>
+									</header>
+
+<h4>Conhecendo</h4>
+Alguns pacotes não estão no repositório oficial do Debian, podemos recorrer a pacotes de terceiros ou até mesmo empacotar os programas para .deb e instalar facilmente com um simples comando via terminal.<br>
+Quais as vantagens e desvantagens?<br>
+A vantagem é que quase todos programas quando feitos para GNU/Linux, levam pacotes .deb como a primeira opção.<br>
+A desvantagem é a segurança, por isso cuide bem, como somos baseados em Debian, seguimos os mesmos passos quando se fala em segurança, levando apenas pacotes oficiais.
+<br>
+<br>
+<h4>Instalação</h4>
+
+Em nossa demonstração vamos utilizar o editor Sublime.<br>
+Vamos navegar até o site oficial, entrar no menu Download e escolher a opção <b>Ubuntu 64 bit</b>, Ubuntu por ser baseado em Debian, leva o pacote .deb também.<br><br>
+Após ter feito o Download, vamos abrir o terminal e logar como root e navegar até onde está localizado o arquivo.<br>
+Em nosso caso o arquivo está localizado em <b>Downloads</b><br>
+Vamos usar o comando <b>cd</b> para navegar até a pasta desejada e logo após rodamos o comando ls para saber qual o nome do arquivo.<br><br>
+<b># cd /home/NOMEdoUSUARIO/Downloads</b><br>
+<b># ls -a</b><br><br>
+<img src="images/instalacaodeb.png"><br><br>
+Localizado o nome do arquivo, vamos agora instalar o pacote, para isso vamos rodar o comando <b>dpkg -i NOMEdoPrograma</b> você pode autocompletar o nome, por exemplo digite sublime e tecle <b>TAB</b> e o nome se auto completará.<br><br>
+<b># dpkg -i sublime-text_build-3126_amd64.deb</b><br><br>
+<img src="images/instacaosublime.png"><br><br>
+Pronto, a instalação foi concluída.<br><br></p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

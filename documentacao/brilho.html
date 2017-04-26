@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Emmi GNU/Linux</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Documentação</h1>
+					<a href="instalacaoemmi.html">Instalação Emmi</a><br>
+					<a href="primeirospassos.html">Os primeiros passos</a><br>
+					<a href="instalacaodeprogramas.html">Instalação de programas</a><br>
+					<a href="instalacaopacotesdebian.html">Instalação de pacotes .deb</a><br>
+					<a href="trocarsenhadoroot.html">Trocar senha do root</a><br>
+					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
+					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>							
+				</header>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Aumentando e diminuindo brilho da tela</h2>
+									</header>
+									<p>Existem algumas maneiras para fazer este procedimento, vamos ensinar o jeito mais rápido, feito o procedimento a tecla <b>FN</b> vai estar configurada para fazer está ação.<br>
+									Vamos começar abrindo o terminal, e vamos editar o grub.<br>
+									Após abrir o terminal rode o comando abaixo:<br><br>
+									# <b>nano</b> /etc/default/grub<br><br>
+									Procure está linha<br>
+									<b>GRUB_CMDLINE_LINUX_DEFAULT="quiet"</b><br>
+									<img src="images/brilho1.png"><br>
+									Agora substitua por está linha:<br>
+									<b>GRUB_CMDLINE_LINUX_DEFAULT="quiet acpi_osi="</b><br>
+									Dê <b>CTRL</b>+<b>O</b> para salvar e <b>CTRL</b>+<b>X</b> para sair.<br>
+									Após feito isso vamos atualizar o GRUB, rode o comando:<br><br>
+									# <b>update-grub</b><br><br>
+									Agora reinicie o seu computador.
+
+								</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

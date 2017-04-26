@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Emmi GNU/Linux</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Documentação</h1>
+					<a href="instalacaoemmi.html">Instalação Emmi</a><br>
+					<a href="primeirospassos.html">Os primeiros passos</a><br>
+					<a href="instalacaodeprogramas.html">Instalação de programas</a><br>
+					<a href="instalacaopacotesdebian.html">Instalação de pacotes .deb</a><br>
+					<a href="trocarsenhadoroot.html">Trocar senha do root</a><br>
+					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
+					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>
+				</header>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Instalação Emmi</h2>
+									</header>
+<p>A Emmi conta com instalador simples e objetivo, neste passo a passo você irá ver como é fácil instalar a Emmi em seu HD.<br><br>
+Para iniciar o processo de instalação vamos clicar no ícone <b>Instalar Emmi Linux</b>.<br><br>
+<img src="images/1.png"><br><br>
+Feito isto vamos selecionar a Linguagem, em nosso caso selecionamos Português do Brasil.<br><br>
+<img src="images/2.png"><br><br>
+Agora vamos selecionar a nossa Timezone, selecionamos <b>America/São_Paulo</b><br><br>
+<img src="images/3.png"><br><br>
+Agora vamos selecionar o <b>Layout do Teclado</b>,Selecionamos Português.<br><br>
+<img src="images/4.png"><br><br>
+Agora o Preencha suas informações, como Nome, Nome do usuário, Senha.<br>
+Caso você queira que o sistema faça login automaticamente, sete o Automatic Login.<br>
+Caso contrário deixe desmarcado.<br><br>
+<img src="images/5.png"><br><br>
+Agora vem a parte do particionamento.<br>
+Não se preocupe, está parte é muito fácil, vamos clicar em <b>Editar Partições</b>, para começar a particionar o HD.<br><br>
+<img src="images/6.png"><br><br>
+O Gparted será aberto.<br><br>
+<img src="images/7.png"><br><br>
+Caso você deseja sobrescrever a Emmi em seu HD, exclua o sistema de seu HD, em nosso caso temos 2 partições que são quase padrões.<br>
+A partição Raiz /<br>
+E a partição Swap<br>
+Vamos excluir as duas partições, click com o botão direito do mouse e selecione a opção <b>Excluir</b> como feito abaixo.<br><br>
+<img src="images/8.png"><br><br><br><br>
+Agora vamos criar novas partições, vamos utilizar 2 partições, a partição <b>Raiz</b> e partição <b>Swap</b><br>
+Para isso vamos clicar no espaço <b>Não alocado</b> com o botão direito do mouse e clicar em <b>Novo</b> e aplicar, na flexa vermelha localizada no menu superior.<br><br>
+<img src="images/9.png"><br><br><br><br>
+Pronto, as novas partições estão criadas e formatadas, agora vamos prosseguir com a instalação.<br><br>
+<img src="images/10.png"><br><br>
+Voltamos a tela do particionamento, agora vamos indicar para o instalador aonde ficará a raiz do sistema <b>/</b><br>
+Em nosso caso é o <b>Sda1</b>.<br>
+Click com o botão direito do mouse para abrir o menu.<br><br>
+<img src="images/11.png"><br><br>
+Opção do bootloader, deixe o padrão.<br><br>
+<img src="images/12.png"><br><br>
+Confira nesta tela de resumo se as informações estão todas corretas.<br>
+Se sim, click em <b>Aplicar</b>.<br><br>
+<img src="images/13.png"><br><br>
+A instalação vai começar, o processo demora em torno de 3 a 8 minutos para ser concluída, dependendo do seu Hardware.<br><br>
+<img src="images/14.png"><br><br>
+Processo concluído, retire a mídia live e reinicie seu computador<br><br>
+<img src="images/15.png"><br><br>
+Agora é só aproveitar</p>
+								</div>
+							</section>
+					</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
