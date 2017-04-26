@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Password</title>
+</head>
+<FORM>
+<CENTER>
+<input type="button" value="Entre com password" onClick="passWord()">
+</FORM>
+</CENTER>
+<script language="javascript">
+
+//       .--------{NÃO REMOVA ESTA NOTA}-------------------.
+//       	  Script criado por Slackjeff                    
+
+
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Insira sua Senha','Digite sua senha');
+while (testV < 3) {
+ if (!pass1) 
+  history.go(-1);
+ if (pass1.toLowerCase() == "emmilinux") {
+   alert('Logado !, Aguarde...');
+   window.open('index2.html');
+   break;
+   } 
+  testV+=1;
+  var pass1 = 
+  prompt('Acesso Negado - Password Incorreto.','Digite sua senha');
+ }
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+}
+</script>
+<body>
+<center>
+<h1>Logue-se</h1>
+</center>
+</body>
+</html>
