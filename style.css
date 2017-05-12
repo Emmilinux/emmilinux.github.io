@@ -1,0 +1,89 @@
+body{
+margin: 0px;
+padding: 0px;
+background: -webkit-gradient(radial, 100 100, 1, 100 100, 2000, from(#672178), to(#6e99ae));
+background: -moz-radial-gradient(0% 0%, circle farthest-corner, #34869b 0%, #6e99ae 100%, #b8d3db 100%);
+min-width: 500px;
+}
+
+.input input, textarea {  
+background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.5), rgba(34, 11, 40, 0.5));  
+background:-webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.5)), to(rgba(34, 11, 40, 0.5)));
+border: solid 0px #000;  
+border-bottom-left-radius: 3px;
+border-top-left-radius: 3px;
+-moz-border-radius-bottomleft: 3px;
+-moz-border-radius-topleft: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-webkit-border-top-left-radius: 3px;
+box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+-moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+-webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+color: rgba(238, 215, 244, 0.8);
+display: inline;
+float: left;
+font: normal 13px/100% ubuntu, helvetica, arial, sans-serif; 
+font-weight: bold;
+height: 30px;
+left: 80px;
+margin: 0px;
+outline: 0;  
+padding-left: 10px;
+position: absolute;
+text-shadow: 1px 1px 3px rgba(1, 0, 2, 0.5);
+top: 80px;
+width: 300px;
+
+}  
+
+.input input:hover, input:focus, textarea:hover, textarea:focus {
+background:-webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.7)), to(rgba(34, 11, 40, 0.7)));
+background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.7), rgba(34, 11, 40, 0.7));  
+}
+
+img{
+bottom: 30px;
+position: absolute;
+right: 30px;
+}
+
+.submit input {  
+background: #f58233;
+background: -moz-linear-gradient(top, #1c5d6d, #1c5d6d);   
+background:-webkit-gradient(linear, left top, left bottom, from(#f58233), to(#e15f0b));
+border: 0px; 
+border-bottom-right-radius: 3px;
+border-top-right-radius: 3px;
+-moz-border-radius-bottomright: 3px;
+-moz-border-radius-topright: 3px;
+-webkit-border-bottom-right-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+-moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+-webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+color: #FFFFFF; 
+display: inline;
+float: left;
+font: normal 11px/100% ubuntu, helvetica, arial, sans-serif; 
+font-weight: bold;
+height: 30px;  
+left: 380px;
+margin: 0px;
+position: absolute;
+text-shadow: 0px 1px 3px #261102;
+top: 80px;
+width: 60px;
+} 
+
+.submit input:hover {
+background: #1c5d6d;
+background: -moz-linear-gradient(top, #1c5d6d, #1c5d6d);   
+background:-webkit-gradient(linear, left top, left bottom, from(#f79959), to(#f47320));
+}
+
+.submit input:active {
+background: ##f58233;
+background: -moz-linear-gradient(top, #e15f0b, #f58233);   
+background:-webkit-gradient(linear, left top, left bottom, from(#f58233, to(#e15f0b));
+}
+
