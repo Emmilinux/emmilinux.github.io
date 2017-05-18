@@ -3,11 +3,11 @@
   <head>
     <title>Emmi Gerador de senhas Seguras</title>
     <meta name="author" content="Slackjeff | https://slackjeff.github.io" />
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
     <script type="text/javascript">
       <!--
-      // função dec2hex: converte números decimais em números hexadecimais 
+      // funÃ§Ã£o dec2hex: converte nÃºmeros decimais em nÃºmeros hexadecimais 
       function dec2hex(numero) {
         var base = 16;
         var digito = new Array();
@@ -38,18 +38,18 @@
         document.forms[0].senha.value = "";
         tamanho = document.forms[0].digitos.value;
 
-        // validar o campo *dígitos*
+        // validar o campo *dÃ­gitos*
         if (tamanho < 1 || isNaN(tamanho)) {
-          alert("Escolha um valor numérico válido para esse campo");
+          alert("Escolha um valor numÃ©rico vÃ¡lido para esse campo");
           document.forms[0].digitos.focus();
           document.forms[0].digitos.select();
           return;
         }
 
-        // ajustar o tamanho (em pixels) do campo de acordo com o número de dígitos
+        // ajustar o tamanho (em pixels) do campo de acordo com o nÃºmero de dÃ­gitos
         document.forms[0].senha.style.width = (tamanho * 9) + "px";
 
-        // códigos ASCII decimais
+        // cÃ³digos ASCII decimais
         min = 32;
         max = 126;
 
@@ -114,7 +114,7 @@
     <form action="#" onsubmit="GerarSenha(); return false">
       Senha: <input type="text" name="senha" size="30" class="campo1" readonly="readonly" />&nbsp;&nbsp;
       <input type="submit" value="Gerar senha" class="botao" /><br /><br />
-      Dígitos: <input type="text" value="20" name="digitos" size="3" class="campo2" maxlength="2" /> 
+      DÃ­gitos: <input type="text" value="20" name="digitos" size="3" class="campo2" maxlength="2" /> 
     </form><br />
     <div id="aguarde"></div> 
     <a href="index.html">VOLTAR</a>
