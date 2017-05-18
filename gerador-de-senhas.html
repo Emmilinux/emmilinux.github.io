@@ -3,11 +3,11 @@
   <head>
     <title>Emmi Gerador de senhas Seguras</title>
     <meta name="author" content="Slackjeff | https://slackjeff.github.io" />
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
     <script type="text/javascript">
       <!--
-      // funÃ§Ã£o dec2hex: converte nÃºmeros decimais em nÃºmeros hexadecimais 
+      // função dec2hex: converte números decimais em números hexadecimais 
       function dec2hex(numero) {
         var base = 16;
         var digito = new Array();
@@ -38,18 +38,18 @@
         document.forms[0].senha.value = "";
         tamanho = document.forms[0].digitos.value;
 
-        // validar o campo *dÃ­gitos*
+        // validar o campo *dígitos*
         if (tamanho < 1 || isNaN(tamanho)) {
-          alert("Escolha um valor numÃ©rico vÃ¡lido para esse campo");
+          alert("Escolha um valor numérico válido para esse campo");
           document.forms[0].digitos.focus();
           document.forms[0].digitos.select();
           return;
         }
 
-        // ajustar o tamanho (em pixels) do campo de acordo com o nÃºmero de dÃ­gitos
+        // ajustar o tamanho (em pixels) do campo de acordo com o número de dígitos
         document.forms[0].senha.style.width = (tamanho * 9) + "px";
 
-        // cÃ³digos ASCII decimais
+        // códigos ASCII decimais
         min = 32;
         max = 126;
 
@@ -66,22 +66,55 @@
     </script>
 
     <style type="text/css">
-      <!--
-      * {font: 1.0em Verdana}
-      .campo1 {width: 200px}
-      .campo2 {width: 40px}
-      .campo1, .campo2 {border: solid 2px #CCC}
-      .botao {border: solid 1px #BBB; background-color: #EEE; cursor: pointer}
-      #aguarde {font-style: italic}
-      -->
+      * {
+
+        font: 1.0em Verdana
+
+
+      }
+
+      body{
+
+        background-image: url(GettyImages-528338761.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%; 
+
+      }
+
+      .campo1 {
+
+        width: 200px
+      }
+
+      .campo2 {
+
+        width: 40px
+      }
+
+      .campo1, .campo2 {
+
+        border: solid 2px #CCC
+      }
+
+      .botao {
+
+        border: solid 1px #BBB; background-color: #EEE; cursor: pointer
+      }
+
+      #aguarde {
+
+        font-style: italic
+      }
+
     </style>
+    
   </head>
 
   <body>
     <form action="#" onsubmit="GerarSenha(); return false">
       Senha: <input type="text" name="senha" size="30" class="campo1" readonly="readonly" />&nbsp;&nbsp;
       <input type="submit" value="Gerar senha" class="botao" /><br /><br />
-      DÃ­gitos: <input type="text" value="20" name="digitos" size="3" class="campo2" maxlength="2" /> 
+      Dígitos: <input type="text" value="20" name="digitos" size="3" class="campo2" maxlength="2" /> 
     </form><br />
     <div id="aguarde"></div> 
     <a href="index.html">VOLTAR</a>
