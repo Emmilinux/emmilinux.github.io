@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Emmi GNU/Linux</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Documentação</h1>
+					<a href="../index.html">Inicio</a><br><br>					
+					<a href="instalacaoemmi.html">Instalação Emmi</a><br>
+					<a href="primeirospassos.html">Os primeiros passos</a><br>
+					<a href="novoeexcluirusuario.html">Adicionando e removendo usuários</a><br>
+					<a href="instalacaodeprogramas.html">Instalação de programas</a><br>
+					<a href="instalacaopacotesdebian.html">Instalação de pacotes .deb</a><br>
+					<a href="trocarsenhadoroot.html">Trocar senha do root</a><br>
+					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
+					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>
+				</header>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Adicionando e removendo usuários</h2>
+									</header>
+
+<p>Abra o terminal e logue-se como root, após feito este procedimento vamos dar inicio ao primeiro processo que é adicionar um novo usuário.</p>
+<img src="images/logarroot.png"><br><br>
+
+<p>Rode o comando <b>adduser</b> e o <b>nome do usuário</b>:<br>
+<b># adduser jefferson</b><br>
+
+Neste passo o sistema irá pedir uma senha [FORTE] de preferencia e irá pedir para repetir.<br>
+<b>Enter new UNIX password:</b> 123456<br>
+<b>Retype new UNIX password:</b> 123456<br></p>
+
+<p>Após o processo de enter para as opções padrões, caso você queira modificar troque a resposta.</p>
+
+<p>Agora o sistema ira pedir alguns dados, Nome, telefone etc... fica ao seu critério adicionar.<br>
+	<b>Full Name []:</b> Jefferson rocha<br>
+	<b>Room Number []:</b> <br>
+	<b>Work Phone []:</b> <br>
+	<b>Home Phone []:</b> <br>
+	<b>Other []:</b> </p>
+
+<p>Confirme.<br>
+Is the information correct? [Y/n]</p>
+<img src="images/confirma11a.png">
+<br>
+<br>
+<br>
+<br>
+<h2>Removendo usuários</h2>
+
+<p>O processo de remoção de usuários é muito fácil, neste exemplo vamos remover o usuário "Jefferson" que acabamos de criar.
+Ainda como root rode o comando userdel e o nome do usuário:</p>
+
+<b># userdel</b> jefferson<br>
+
+<p>Pronto, o processo foi concluido.</p>
+<img src="images/userdel.png">
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
