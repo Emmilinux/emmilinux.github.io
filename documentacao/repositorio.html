@@ -24,7 +24,7 @@
 					<a href="trocarsenhadoroot.html">Trocar senha do root</a><br>
 					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
 					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>
-					<a href="repositorio.html">Adicionando repositório na Emmi</a><br>	
+					<a href="repositorio.html">Adicionando repositório na Emmi</a><br>							
 				</header>
 			</section>
 
@@ -36,14 +36,40 @@
 						<!-- One -->
 							<section id="one">
 								<div class="container">
-									<header class="major">
-										<h2>Documentação</h2>
-									</header>
-									<p>Navegue no menu que está presente no lado direito</p>
-								</div>
-							</section>
+		<header class="major">
+		<h2>Adicionando repositório colibri na Emmi</h2>
+		</header>
+									
+			<p>Vamos adicionar o repositório oficial colibri na Emmi.
+			Começamos abrindo o terminal, logando como root e baixando a chave pública.</p>
 
-					</div>
+			<p><b># wget -O - http://colibri.emmilinux.com.br/emmi/conf/lrcjefferson@gmail.com.gpg.key | apt-key add -</b></p>
+
+			<img src="images/chavepublica.png"><br><br>
+
+			<p>Agora vamos adicionar o o link no sources.list
+			Para isto vamos usar o nano ou de sua preferência.</p>
+
+			<p><b># nano /etc/apt/sources.list</b></p>
+
+			<p>e adicionamos ao final:</p>
+
+			<p><b>deb http://colibri.emmilinux.com.br/emmi sid main</b></p>
+
+			<p>Salvamos e fechamos.</p>
+
+			<img src="images/sourceslistrep.png"><br><br>
+
+			<p>Agora rodamos:</p>
+
+			<p><b># apt update</b></p>
+
+			<p>E pronto o repositório colibri está funcionando.</p>
+
+		</div>
+		</section>
+
+		</div>
 
 				<!-- Footer -->
 					<section id="footer">
