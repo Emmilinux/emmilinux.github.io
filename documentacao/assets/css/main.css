@@ -48,6 +48,8 @@
 		-webkit-text-size-adjust: none;
 	}
 
+
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -214,6 +216,15 @@
 		}
 
 	}
+
+
+.imagemartigo{
+
+	max-width: 100%;
+	width: 100%;
+	box-shadow: 3px 3px 20px 1px #b0b0b0;
+}
+
 
 /* Grid */
 
