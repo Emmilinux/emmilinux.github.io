@@ -4,7 +4,7 @@
 		<title>Emmi GNU/Linux</title>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -15,7 +15,7 @@
 			<section id="header">
 				<header>
 					<h1>Documentação</h1>
-					<a href="../index.html">Inicio</a><br><br>					
+					<a href="../index.html"><h5>VOLTAR</h5></a><br>					
 					<a href="instalacaoemmi.html">Instalação Emmi</a><br>
 					<a href="primeirospassos.html">Os primeiros passos</a><br>
 					<a href="novoeexcluirusuario.html">Adicionando e removendo usuários</a><br>
@@ -45,7 +45,7 @@
 <p>A Emmi já vem com os espelhos totalmente configurados e pronto para rodar, porém fica seu critério adicionar ou anular alguns espelhos.<br>
 Vamos ao passo a passo, primeiramente abra o terminal, logue como root e digite:<br><br>
 <b># nano /etc/apt/sources.list</b><br><br>
-<img src="images/mirror.png"><br>
+<img src="images/mirror.png" class="imagemartigo"><br>
 Para deixar um link nulo adicione <b>#</b> na frente do link.<br>
 Saia do editor pressione <b>CTRL+X</b><br><br>
 
@@ -56,7 +56,7 @@ Vamos rodar os seguintes comandos:<br><br>
 <b># apt-get update</b><br>
 <b># apt-get upgrade</b><br><br>
 Este procedimento pode demorar dependendo da velocidade da sua internet.<br><br>
-<img src="images/atualizacao.png"><br><br>
+<img src="images/atualizacao.png" class="imagemartigo"><br><br>
 
 <h4>Ajustando o Horário</h4>
 
@@ -64,11 +64,11 @@ Para ajustar o horário podemos fazer isto via gráfico, porém é mais rápido 
 Vamos abrir o terminal entrar como root e rodamos o seguinte comando:<br><br>
 <b># dpkg-reconfigure tzdata</b><br><br>
 Uma janela se abrirá com alguns continentes como (Africa, America, Antarctica) e assim por diante, selecionamos <b>America</b> e precionamos <b>enter</b></b><br><br>
-<img src="images/horarioamerica.png"><br><br>
+<img src="images/horarioamerica.png" class="imagemartigo"><br><br>
 Use o direcional até achar a localidade, em nosso caso vamos utilizar <b>São Paulo</b><br><br>.
-<img src="images/horariosaopaulo.png"><br><br>
+<img src="images/horariosaopaulo.png" class="imagemartigo"><br><br>
 Se tudo ocorreu bem a seguinte mensagem será exibida no terminal:<br><br>
-<img src="images/horariosaopauloconcluido.png"><br><br><br></p>
+<img src="images/horariosaopauloconcluido.png" class="imagemartigo"><br><br><br></p>
 								</div>
 							</section>
 
