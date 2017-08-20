@@ -45,7 +45,9 @@
 
 <p>A Emmi já vem com os espelhos totalmente configurados e pronto para rodar, porém fica seu critério adicionar ou anular alguns espelhos.<br>
 Vamos ao passo a passo, primeiramente abra o terminal, logue como root e digite:<br><br>
-<b># nano /etc/apt/sources.list</b><br><br>
+
+<b><code># nano /etc/apt/sources.list</code></b><br><br>
+
 <img src="images/mirror.png" class="imagemartigo"><br>
 Para deixar um link nulo adicione <b>#</b> na frente do link.<br>
 Saia do editor pressione <b>CTRL+X</b><br><br>
@@ -54,8 +56,10 @@ Saia do editor pressione <b>CTRL+X</b><br><br>
 
 Após feito isso vamos atualizar o sistema, para garantir toda segurança e pacotes atualizados.<br>
 Vamos rodar os seguintes comandos:<br><br>
-<b># apt-get update</b><br>
-<b># apt-get upgrade</b><br><br>
+
+<b><code># apt-get update</code></b><br>
+<b><code># apt-get upgrade</code></b><br><br>
+
 Este procedimento pode demorar dependendo da velocidade da sua internet.<br><br>
 <img src="images/atualizacao.png" class="imagemartigo"><br><br>
 
@@ -63,13 +67,27 @@ Este procedimento pode demorar dependendo da velocidade da sua internet.<br><br>
 
 Para ajustar o horário podemos fazer isto via gráfico, porém é mais rápido fazer isto via terminal.<br>
 Vamos abrir o terminal entrar como root e rodamos o seguinte comando:<br><br>
-<b># dpkg-reconfigure tzdata</b><br><br>
+
+
+<b><code>$ su</code><br>
+<b><code># dpkg-reconfigure tzdata</code></b><br><br>
+
 Uma janela se abrirá com alguns continentes como (Africa, America, Antarctica) e assim por diante, selecionamos <b>America</b> e precionamos <b>enter</b></b><br><br>
 <img src="images/horarioamerica.png" class="imagemartigo"><br><br>
 Use o direcional até achar a localidade, em nosso caso vamos utilizar <b>São Paulo</b><br><br>.
 <img src="images/horariosaopaulo.png" class="imagemartigo"><br><br>
 Se tudo ocorreu bem a seguinte mensagem será exibida no terminal:<br><br>
 <img src="images/horariosaopauloconcluido.png" class="imagemartigo"><br><br><br></p>
+
+<h2>Ntpdate</h2>
+
+Podemos também usar o ntpdate, que é uma forma mais fácil e mais rápida:<br><br>
+
+<code># ntpdate a.ntp.br</code><br><br>
+
+Para saber mais sobre os servidores acesse <a href="http://www.ntp.br/" class="_blank"><b>Ntp</b></a>
+
+
 								</div>
 							</section>
 
