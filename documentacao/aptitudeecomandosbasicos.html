@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Emmi GNU/Linux</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Documentação</h1>
+					<a href="../index.html"><h5>VOLTAR</h5></a><br>				
+					<a href="instalacaoemmi.html">Instalação Emmi</a><br>
+					<a href="primeirospassos.html">Os primeiros passos</a><br>
+					<a href="aptitudeecomandosbasicos.html">Aptitude e Comandos Básicos</a><br>
+					<a href="novoeexcluirusuario.html">Adicionando e removendo usuários</a><br>
+					<a href="instalacaodeprogramas.html">Instalação de programas</a><br>
+					<a href="instalacaopacotesdebian.html">Instalação de pacotes .deb</a><br>
+					<a href="patchsdecorrecao.html">Instalação de Patchs de correção</a><br>	
+					<a href="trocarsenhadoroot.html">Trocar senha do root</a><br>
+					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
+					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>
+					<a href="repositorio.html">Adicionando repositório na Emmi</a><br>	
+				</header>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Gerenciador Aptitude e Comandos Básicos</h2>
+									</header>
+			
+				<h2>Gerenciador Aptitude</h2>
+		Porque recomendamos o Aptitude ao inves de APT e APT-GET? o Aptitude é a evolução melhorada dos dois citados, mas atinge os mesmos resultados, por isso recomendamos que você utilize na Emmi o Aptitude.
+		Lembrando se você ter dúvidas utilize o Man para ter uma melhor visão.
+		<code>$ man aptitude</code><br><br><br>
+
+		<h3>Lista:</h3>
+
+		<code>aptitude update</code> Atualiza listas de pacotes<br><br>
+		<code>aptitude safe-upgrade</code> Atualiza sistema<br><br>
+		<code>aptitude remove pacote</code> Remove deixando arquivos de configuração no PC<br><br>
+				<code>aptitude reinstall pacote</code> Reinstala pacote<br><br>
+		<code>aptitude install</code> Instala pacotes<br><br>
+		<code>aptitude search</code> Pesquisa de pacotes<br><br>
+		<code>aptitude purge pacote</code> Remove completamente<br><br>
+		<code>aptitude clean</code> Limpa todo o cache do Aptitude<br><br>
+		<code>aptitude autoclean</code> Remove os ficheiros de pacotes de versões ultrapassadas existentes em cache, mas mantém os pacotes de versões atualizados<br><br>
+		<code>aptitude show pacote</code> Verifica se um pacote esta instalado<br><br>
+		<code>aptitude versions pacote</code> Verifica versão do pacote no repositório<br><br><br><br>
+
+
+
+
+		<h3>Comandos básicos</h3>
+
+		Disponibilizamos um PDF escrito por Bruno Andrade com mais de 500 comandos, que serão úteis em sua aprendizagem, segue:
+		<a href="https://github.com/emmilinux/emmilinux.github.io/raw/master/documentacao/arquivos/guia_500_comandos_Linux.pdf"><b>Download</b></a><br><br>
+
+	<code>ls</code> lista os arquivos e diretórios da pasta<br><br>
+	<code>clear</code> limpa a tela<br><br>
+	<code>cd</code> vai direto para o diretório raiz do usuário conectado<br><br>
+	<code>pwd</code> mostra o diretório inteiro que você está;<br><br>
+	<code>cat</code> TYPE;<br><br>
+	<code>df</code> Mostra as partições usadas ou livres do HD;<br><br>
+	<code>more</code> lista o arquivo com pausa de linha em linha (exemplo: CAT leiame |more)<br><br>
+	<code>lpr</code> imprime o arquivo listado;<br><br>
+	<code>free</code> mostra a memória do computador (MEM no DOS);<br><br>
+	<code>shutdown</code> desliga o computador:<br><br>
+	<code>shutdown -r now</code> reinicia o computador;<br><br>
+	<code>shutdown -h now</code> desliga o computador (só desligue quando aparecer escrito "system halted" ou algo equivalente); OBS.: O NOW pode ser mudado. Por exemplo: shutdown -r +10 e o sistema irá reiniciar daqui a 10 minutos).<br><br>
+	<code>Reboot</code> reinicia o sistema instantaneamente (pouco recomendável, preferível shutdown -r now). Use somente em emergências;<br><br>
+	<code>startx</code> inicia o X-Windows (interface gráfica) do Linux;<br><br>
+	<code>mkdir</code> cria um diretório (MD no DOS);<br><br>
+	<code>rmdir</code> destrói um diretório VAZIO (RD no DOS);<br><br>
+	<code>rm</code> apaga um arquivo (DEL no DOS);<br><br>
+	<code>rm -r</code> apaga um diretório;<br><br>
+	<code>who</code> mostra quem está usando a máquina;<br><br>
+	<code>wc</code> conta a quantidade de:<br><br>
+	<code>wc -c arquivo</code> quantidade de bytes<br><br>
+	<code>wc -w arquivo</code> quantidade de palavras<br><br>
+	<code>wc -l arquivo</code> quantidade de linhas;<br><br>
+	<code>date</code> mostra data e hora;<br><br>
+	<code>type</code> explica um determinado arquivo do sistema;<br><br>
+	<code>file</code> descreve um determinado arquivo;<br><br>
+	<code>find / - name ____</code> procura arquivo "____";<br><br>
+	<code>useradd nome_do_novo_usuário</code> cria uma nova conta usuário;<br><br>
+	<code>passwd nome_do_usuário</code> cria ou modifica a senha do usuário;<br><br>
+	<code>userdel -r nome_do_usuário</code> apaga um usuário;<br><br>
+	<code>su</code> passa para o superusuário (perceba que no prompt irá mudar o $ pelo #);<br><br>
+	<code>sndconfig</code> permite configurar a placa de som;<br><br>
+	<code>TAR</code> arquivo para criar Backups:<br><br>
+	<code>TAR -c</code> cria<br><br>
+	<code>TAR -x</code> restaura<br><br>
+	<code>TAR -v</code> lista cada arquivo<br><br>
+	<code>TAR -t</code> lista os arquivos de backups;<br><br>
+	<code>write</code> escreve mensagens para outro usuário em rede;<br><br>
+	<code>mv</code> move arquivos;<br><br>
+	<code>linuxconf</code> configuração do Linux;<br><br>
+	<code>alias</code> possibilita a criação de comandos simples;<br><br>
+	<code>&</code> coloca o comando desejado em background, ou seja, trabalha enquanto você faz outra coisa no computador;<br><br>
+	<code>ps</code> relata os processos em execução;<br><br>
+	<code>kill</code> encerra um ou mais processos em andamento;<br><br>
+	<code>history</code> mostra os comandos que o usuário já digitou;<br><br>
+
+
+
+
+
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
