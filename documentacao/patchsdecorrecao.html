@@ -26,6 +26,8 @@
 					<a href="modificandooterminal.html">Personalizar seu Terminal</a><br>
 					<a href="brilho.html">Aumentando e diminuindo brilho</a><br>
 					<a href="repositorio.html">Adicionando repositório na Emmi</a><br>	
+
+
 				</header>
 			</section>
 
@@ -37,43 +39,33 @@
 						<!-- One -->
 							<section id="one">
 								<div class="container">
-									<header class="major">
-										<h2>Primeiros passos</h2>
-									</header>
+		<header class="major">
+		<h2>Instalação Patchs de correção.</h2>
+		</header>
+									
+			Baixe o patch que deseja <a href="http://emmilinux.com.br/download.html" target="_blank"><b>aqui</b></a>, você pode ver todos os fontes em nosso <a href="https://github.com/emmilinux/patch" target="_blank"><b>Github</b></a><br>
+			Navegue até a pasta onde se localiza os Downloads, em nosso caso fica em /home/NomeDoUsuario/Downloads.<br><br>
 
-<h4>Alteração dos espelhos na Emmi</h4>	
+			<code>$ cd /home/slackjeff/Downloads</code><br><br>
 
-<p>A Emmi já vem com os espelhos totalmente configurados e pronto para rodar, porém fica seu critério adicionar ou anular alguns espelhos.<br>
-Vamos ao passo a passo, primeiramente abra o terminal, logue como root e digite:<br><br>
-<b># nano /etc/apt/sources.list</b><br><br>
-<img src="images/mirror.png" class="imagemartigo"><br>
-Para deixar um link nulo adicione <b>#</b> na frente do link.<br>
-Saia do editor pressione <b>CTRL+X</b><br><br>
+			Feito isto vamos agora entrar como root<br><br>
 
-<h4>Atualizando o Sistema</h4>
+			<code>$ su</code><br><br>
 
-Após feito isso vamos atualizar o sistema, para garantir toda segurança e pacotes atualizados.<br>
-Vamos rodar os seguintes comandos:<br><br>
-<b># apt-get update</b><br>
-<b># apt-get upgrade</b><br><br>
-Este procedimento pode demorar dependendo da velocidade da sua internet.<br><br>
-<img src="images/atualizacao.png" class="imagemartigo"><br><br>
+			Agora vamos instalar o patch rodando dpkg -i nomedopacote.deb<br><br>
 
-<h4>Ajustando o Horário</h4>
+			<code># dpkg -i patchversao.deb</code><br><br>
 
-Para ajustar o horário podemos fazer isto via gráfico, porém é mais rápido fazer isto via terminal.<br>
-Vamos abrir o terminal entrar como root e rodamos o seguinte comando:<br><br>
-<b># dpkg-reconfigure tzdata</b><br><br>
-Uma janela se abrirá com alguns continentes como (Africa, America, Antarctica) e assim por diante, selecionamos <b>America</b> e precionamos <b>enter</b></b><br><br>
-<img src="images/horarioamerica.png" class="imagemartigo"><br><br>
-Use o direcional até achar a localidade, em nosso caso vamos utilizar <b>São Paulo</b><br><br>.
-<img src="images/horariosaopaulo.png" class="imagemartigo"><br><br>
-Se tudo ocorreu bem a seguinte mensagem será exibida no terminal:<br><br>
-<img src="images/horariosaopauloconcluido.png" class="imagemartigo"><br><br><br></p>
-								</div>
-							</section>
+			Pronto, agora podemos remover o pacote .deb<br><br>
 
-					</div>
+			<code># rm -v patchversao.deb</code><br><br>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/hJy7JXvozeo" frameborder="0" allowfullscreen></iframe>
+
+		</div>
+		</section>
+
+		</div>
 
 				<!-- Footer -->
 					<section id="footer">
